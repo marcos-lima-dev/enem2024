@@ -4,15 +4,8 @@ import { motion } from "framer-motion";
 import { useAuth } from "../contexts/AuthContext";
 import { Button } from "../components/ui/button";
 import { Card } from "../components/ui/card";
-import {
-    Github,
-    Facebook,
-    Google,
-    Mail,
-    ArrowRight,
-    User,
-    Lock,
-} from "lucide-react";
+import GoogleIcon from "../assets/GoogleIcon";
+import { Github, Facebook, Mail, ArrowRight, User, Lock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { authConfig } from "../lib/socialAuth";
 
@@ -86,7 +79,7 @@ const Login = () => {
         },
         {
             provider: "google",
-            icon: Google,
+            icon: GoogleIcon,
             text: "Continuar com Google",
             bgColor: "bg-[#DB4437]",
             hoverColor: "hover:bg-[#DB4437]/90",
